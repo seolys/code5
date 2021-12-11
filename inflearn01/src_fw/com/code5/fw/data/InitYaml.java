@@ -12,8 +12,7 @@ import java.util.Properties;
  */
 public class InitYaml {
 
-	/**
-	 * 
+	/*ㄹㄷㅈㅂ*
 	 */
 	private static InitYaml thisInc = new InitYaml();
 
@@ -25,12 +24,12 @@ public class InitYaml {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	private Map<String, Object> map = null;
 
 	/**
-	 * 
+	 *
 	 */
 	private boolean isRead = false;
 
@@ -42,7 +41,7 @@ public class InitYaml {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	private String hostName = null;
 
@@ -54,7 +53,7 @@ public class InitYaml {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	private String webAppRoot = null;
 
@@ -66,7 +65,7 @@ public class InitYaml {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	private String appName = null;
 
@@ -90,7 +89,7 @@ public class InitYaml {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	private String characterSet = null;
 
@@ -102,7 +101,7 @@ public class InitYaml {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	private boolean isProduct = false;
 
@@ -114,7 +113,7 @@ public class InitYaml {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	private boolean isCache = false;
 
@@ -130,7 +129,7 @@ public class InitYaml {
 	private String webAppDir = null;
 
 	/**
-	 * 
+	 *
 	 */
 	private InitYaml() {
 
@@ -170,7 +169,7 @@ public class InitYaml {
 
 		// webAppRoot/web/WEB-INF
 		file = file.getParentFile();
-		
+
 		// webAppRoot/WEB-INF
 		file = file.getParentFile();
 
@@ -265,7 +264,7 @@ public class InitYaml {
 	 */
 	private String convert$(String s) {
 		if (this.webAppRoot != null) {
-			s = s.replace("[WEB_APP_ROOT]", this.webAppRoot);
+			s = s.replace("[APP_ROOT]", this.webAppRoot);
 		}
 		return s;
 	}
